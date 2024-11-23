@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--MAIN -AWESOME -->>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--MAIN CSS -->>
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Personal Portfolio Webbsite Design</title>
+</head>
+<body>
+    <!--HEADER DESIGN -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>  
+    
+    <!--HOME SECTION DESIGN -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Vihanga Vimukthi</h1>
+            <h1>And I'm a <span class="multiple-text"> </span></h1>
+            <p>A creative thinker who thrives on tackling challenges and discovering unique solutions in dynamic environments, embracing new ideas and fostering innovation.</p>
+            <div class="social-media">
+                <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+                <a href="https://lk.linkedin.com/in/vihanga-"><i class="fa-brands fa-linkedin"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-github"></i></a> -->
+            </div>
+            <a href="https://drive.google.com/file/d/1Ou7JIT50gus3yizpEpxFd47uwv3C2zs6/view?usp=sharing" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="WhatsApp Image 2024-10-24 at 15.04.55.jpeg" alt="">
+        </div>
+    </section>  
+    
+    <!--ABOUT SECTION DESIGN -->
+    <section class="about" id="about">
+       <div class="about-img">
+        <img src="WhatsApp Image 2024-10-24 at 15.04.55.jpeg" alt="">
+       </div>
+
+       <div class="about-concent">
+         <h2 class="heading">About <span>Me</span></h2>
+         <h3>Software Engineer</h3>
+         <p>Hi , I’m Vihanga and I’m a Software Engineer, graduate with 2nd class upper at the university of Plymouth, always try to learn something new .and explore new things, think differently, solve problems. Also, hardworking individual who seeks to explore new tools and technology in IT and Engineering. 
+            Skilled in Game Development, AR ,VR , .NET , AI ,Software Development and Teamwork.</p>
+         <a href="#" class="btn">Read More</a>
+       </div>
+    </section>
+
+    <!--SERVICES SECTION DESIGN -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Web development is the art of turning dreams into digital realities.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Game Developer</h3>
+                <p>Game development is the craft of transforming imagination into interactive adventures.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>Turning imaginative ideas into powerful digital solutions that connect users with their needs.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+            <div class="services-box" >
+                <i class="fa-solid fa-robot"></i>
+                <h3>IOT</h3>
+                <p>IoT is the innovation that connects the physical world to the digital realm, creating smart solutions that enhance our everyday lives.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+            
+
+     
+        </div>
+    </section>
+
+    <!--PORTFOLIO SECTION DESIGN -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <a style=" cursor: pointer" onclick="openPopup('Card Title', 'content',1)">
+        <div class="protfolio-container">
+            <div class="protfolio-box">
+                <img src="Gif folder/Screenshot 2024-10-30 125200.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Angular Blog </h4>
+                    <p>Angular UI with .NET API</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </a>
+
+        <a style=" cursor: pointer" onclick="openPopup('Card Title', 'content',2)">
+            <div class="protfolio-box">
+                <img src="./Gif folder/Screenshot 2024-10-29 201407.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web API</h4>
+                    <p>New Zealand walks API</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </a>
+        <a style=" cursor: pointer" onclick="openPopup('Card Title', 'contenrt',3)">
+            <div class="protfolio-box">
+                <img src="./Gif folder/WhatsApp Image 2024-10-30 at 13.17.09.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Mobile App</h4>
+                    <p>Brain Math</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </a>
+        <a style=" cursor: pointer" onclick="openPopup('Card Title', 'contenrt',4)">
+            <div class="protfolio-box">
+                <img src="./Gif folder/New Project (1).gif" alt="">
+                <div class="portfolio-layer">
+                    <h4>AR Vesak Lantan</h4>
+                    <p>.</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </a>
+        <a style=" cursor: pointer" onclick="openPopup('Card Title', 'contenrt',5)">
+            <div class="protfolio-box">
+                <img src="./Gif folder/GIF-241030_095334.gif" alt="">
+                <div class="portfolio-layer">
+                    <h4>Enemy AI(Gaming Project)</h4>
+                    <p>Smart enemy AI</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </a>
+        <a style=" cursor: pointer" onclick="openPopup('Card Title', 'contenrt',6)">
+            <div class="protfolio-box">
+                <img src="./Gif folder/GIF-241029_202711.gif" alt="">
+                <div class="portfolio-layer">
+                    <h4>Rage Room(VR)</h4>
+                    <p>Release Stress </p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </a>
+    </section>
+
+    <section class="portfolio body-Grid" id="portfolio">
+        <h2 class="heading">Sport <span>Achievements</span></h2>
+
+        <article class="gallery">
+            <img src="Sports/IMG_9347.jpg" alt="guitar player at concert" />
+            <img src="Sports/Screenshot_20241123_140323_Instagram.jpg" alt="guitar player at concert" />
+            <img src="Sports/Screenshot_20241123_140157_Instagram.jpg" alt="guitar player at concert" />
+            <img src="Sports/WhatsApp Image 2024-11-23 at 14.11.42_7aecaea2.jpg" alt="guitar player at concert" />
+            <img src="2.jpg" alt="guitar player at concert" />
+            
+          </article>    
+
+        </section>
+
+
+
+  <!-- Popup overlay and card -->
+  <div id="popup-overlay" class="popup-overlay"></div>
+  <div id="popup-card" class="popup-card">
+    <h2 id="popup-title">Title</h2>
+    <p id="popup-content">Content</p>
+    <button onclick="closePopup()">Close</button> 
+  </div>
+
+
+
+    <!--CONTACT SECTION DESIGN -->
+   <!--CONTACT SECTION DESIGN -->
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form id="contactForm" action="" onsubmit="sendEmail(); return false;">
+        <div class="input-box"><input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="emailAddress" placeholder="Email Address" required>
+        </div>
+            <div class="input-box"><input type="number" id="mobileNumber" placeholder="Mobile Number" required>
+                <input type="text" id="emailSubject" placeholder="Email Subject" required>
+            </div>
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Mail" class="btn">
+    </form>
+</section>
+<script>
+    function sendEmail() {     
+        const fullName = document.getElementById('fullName').value;     
+        const emailAddress = document.getElementById('emailAddress').value;     
+        const mobileNumber = document.getElementById('mobileNumber').value;     
+        const emailSubject = document.getElementById('emailSubject').value;     
+        const message = document.getElementById('message').value;     
+    
+        const mailtoLink = `mailto:vihangatkd@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(
+            "Name: " + fullName + 
+            "\nEmail: " + emailAddress + 
+            "\nMobile: " + mobileNumber + 
+            "\n\nMessage:\n" + message
+        )}`;
+    
+        // Redirect to the mailto link
+        window.location.href = mailtoLink;
+    }
+    </script>
+    
+    <!--FOOTER DESIGN -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by @vihangavimukthi | All Rights Reserved.</p>
+        </div>
+    
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+
+    <!--SCROLL REVEAL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--MAIN JS -->
+    <script src="main.js"></script>
+</body>
+</html>
